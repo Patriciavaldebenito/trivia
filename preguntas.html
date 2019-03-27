@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>PSU matemáticas</title>
+  </head>
+
+  <body  id="cuerpo_3"  onload="desafio()">
+    <!-- titulo  -->
+    <h1  id="categoryTittle">Potencias</h1>
+    <!-- pregunta 1  -->
+    <div style="text-align:center" id="question1">
+      <table >
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>1. El resultado de la potencia de un numero impar positivo, cuyo exponente es par negativo, será: </h4>
+              <hr  width="90%"/>
+              <form>
+                <input type="radio" name="answer" value="1" id="answerA1" >Número entero positivo<br>
+                <input type="radio" name="answer" value="0" id="answerA2"> Número entero negativo<br>
+                <input type="radio" name="answer" value="0" id="answerA3"class="correct">Número decimal positivo<br>
+              </form>
+          </td>
+          <td WIDTH="10%" ></td>
+          <td>
+            <img src="imagenpreguntas.png" width="180">
+          </td>
+        </tr>
+      </table> 
+    </div>
+
+    <!-- pregunta 2  -->
+    <div id="question2">
+      <table>
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>2. En un rectángulo, el largo mide el doble de su ancho y su perímetro es p. ¿Cuál es su área? </h4>
+              <hr  width="90%"/>
+              <form>
+                <input type="radio" name="answer" value="0" id="answerA4">p<sup>2</sup>/72<br>
+                <input type="radio"  name="answer" value="1" id="answerA5">p<sup>2</sup>/9<br>
+                <input type="radio" name="answer" value="0" id="answerA6" class="correct">p<sup>2</sup>/18<br>
+              </form>
+          </td>
+          <td ></td>
+          <td>
+            <img src="ejercicioarper.png" width="250">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- pregunta 3  -->
+    <div id="question3">
+      <table>
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>3. Si el área de una figura plana esta representada por una expresion algebraica, son verdaderas:</h4>
+              <p>I)    x<sup>2</sup> + 4x + 4, entonces la figura puede ser un cuadrado de lado (x+2).</p>
+              <p>II)   x<sup>2</sup> - 9, entonces la figura puede ser un cuadrado de lado (x-3)</p>
+              <p>III)  x<sup>2</sup> + 7x + 12, entonces la figura puede ser un rectangulo donde uno de sus lados es (x+4)</p>
+              <hr align="left" width="50%"/>
+              <form>
+                <input type="radio" class="correct" name="answer" value="1" id="answerA7"> solo I<br>
+                <input type="radio" name="answer" value="0" id="answerA9"class="correct"> I y III<br>
+                <input type="radio" name="answer" value="0" id="answerA8"> I, II y III<br>
+            
+              </form>
+          </td>
+          <td WIDTH="3%"></td>
+          <td>
+            <img src="formulas.png" width="250">
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+    <!-- botones -->
+    <button class="b2" type="button" id="nextQuestion">Siguiente</button>
+    <!-- pagina de puntaje  -->
+    <div  id="score">
+      <h1>Tu puntuación final es:</h1>
+      <!-- insertamos el puntaje aca  -->
+      <h2 id="finalScore"></h2>
+      <!-- seccion para volver a jugar -->
+      <p>¿Quieres volver a jugar?</p>
+      <form  action="saludo.html">
+        <button class="b3" type="submit" name="button">Sí</button>
+      </form>
+      <br/>
+      <form  action="gracias.html">
+        <button class="b3" type="submit" name="button">No</button>
+      </form>
+    </div>
+  </body>
+
+</html>

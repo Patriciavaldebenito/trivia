@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>PSU matemàticas</title>
+  </head>
+
+  <body  id="cuerpo_3"  onload="desafio()">
+    <!-- titulo  -->
+    <h1  id="categoryTittle2">Área y perímetro figuras geométricas</h1>
+    <!-- pregunta 1  -->
+    <div style="text-align:center" id="question1">
+      <table >
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>¿Cuál es el área y perímetro de un cuadrado de lado 2 metros?</h4>
+              <hr  width="90%"/>
+              <form>
+                <input type="radio" name="answer" value="1" id="answerA1" >área = 8 m<sup>2</sup> y perímetro = 4 metros<br>
+                <input type="radio" name="answer" value="0" id="answerA2"class="correct">área = 4 m<sup>2</sup> y perímetro = 4 metros<br>
+                <input type="radio" name="answer" value="0" id="answerA3">área = 4 m<sup>2</sup> y perímetro = 16 metros<br>
+              </form>
+          </td>
+          <td WIDTH="3%"></td>
+          <td>
+            <img src="" width="180">
+          </td>
+        </tr>
+      </table> 
+    </div>
+
+    <!-- pregunta 2  -->
+    <div id="question2">
+      <table>
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>2. ¿Cual es el área y perímetro de un cuadrado de lado 5 metros?</h4>
+              <hr  width="90%"/>
+              <form>
+                <input type="radio" name="answer" value="0" id="answerA4">área = 25 m<sup>2</sup> y perímetro = 25 metros<br>
+                <input type="radio"  name="answer" value="1" id="answerA5">área = 10 m<sup>2</sup> y perímetro = 25 metros<br>
+                <input type="radio" name="answer" value="0" id="answerA6" class="correct">área = 25 m<sup>2</sup> y perímetro = 20 metros<br>
+              </form>
+          </td>
+          <td ></td>
+          <td>
+            <img src="" width="250">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- pregunta 3  -->
+    <div id="question3">
+      <table>
+        <tr>
+          <td WIDTH="5%"></td>
+          <td>
+              <h4>3. ¿Cuál es el área y perímetro de un cuadrado de lado 10 metros?:</h4>
+            
+              <form>
+                <input type="radio" class="correct" name="answer"  id="answerA7">área = 25 m<sup>2</sup> y perímetro = 20 metros<br>
+                <input type="radio" name="answer"  id="answerA9"class="correct">área = 100 m<sup>2</sup> y perímetro = 40 metros<br>
+                <input type="radio" name="answer"  id="answerA8">área = 25 m<sup>2</sup> y perímetro = 20 metros<br>
+            
+              </form>
+          </td>
+          <td WIDTH="3%"></td>
+          <td>
+            <img src="" width="250">
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+    <!-- botones -->
+    <button class="b2" type="button" id="nextQuestion">Siguiente</button>
+    <!-- pagina de puntaje  -->
+    <div  id="score">
+      <h1>Tu puntuación final es:</h1>
+      <!-- insertamos el puntaje aca  -->
+      <h2 id="finalScore"></h2>
+      <!-- seccion para volver a jugar -->
+      <p>¿Quieres volver a jugar?</p>
+      <form  action="saludo.html">
+        <button class="b3" type="submit" name="button">Sí</button>
+      </form>
+      <br/>
+      <form  action="gracias.html">
+        <button class="b3" type="submit" name="button">No</button>
+      </form>
+    </div>
+  </body>
+
+</html>
